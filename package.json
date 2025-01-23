@@ -1,0 +1,74 @@
+{
+  "name": "paintor-ui",
+  "version": "0.0.0",
+  "author": {
+    "name": "AseasRoa"
+  },
+  "description": "UI library for Paintor",
+  "license": "MIT",
+  "type": "module",
+  "types": "./types/index.d.ts",
+  "main": "./lib/index.js",
+  "browser": "./dist/bundle.js",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "browser": "./dist/bundle.js",
+    "import": "./lib/index.js",
+    "default": "./lib/index.js"
+  },
+  "imports": {
+    "#paintor-ui": {
+      "default": "./lib/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "check": "npm run check:tsc & npm run check:eslint & npm run check:stylelint & npm run check:dpdm -- --no-warning --no-tree",
+    "check:eslint": "eslint --config eslint.config.js ./",
+    "check:tsc": "tsc --noEmit",
+    "check:stylelint": "stylelint \"**/*.css\"",
+    "check:dpdm": "dpdm --exit-code circular:1 ./lib/index.js",
+    "depencency-graph": "npx depcruise lib --output-type archi | dot -T svg > dependency-graph.svg",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "build": "vite build",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "dependencies": {
+    "paintor": "^1.4.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@vitest/coverage-v8": "^3.0.2",
+    "@vitest/eslint-plugin": "^1.1.25",
+    "dependency-cruiser": "^16.9.0",
+    "dpdm": "^3.14.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.6.2",
+    "jsdom": "^26.0.0",
+    "stylelint": "^16.13.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vitest": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AseasRoa/paintor-ui.git"
+  },
+  "homepage": "https://aseasroa.github.io/paintor-ui",
+  "keywords": [
+    "frontend",
+    "backend",
+    "templates",
+    "components",
+    "ui",
+    "view",
+    "vanilla",
+    "hyperscript",
+    "reactive"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
