@@ -22,6 +22,7 @@ export function Button(
     color?: Color
     size?: Size
     class?: string
+    icon?: string
     onClick?: (ev: PointerEvent) => void
   }
 ): import('paintor').Template
