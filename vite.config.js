@@ -25,6 +25,7 @@ export default defineConfig({
     sourcemap: true,
     emptyOutDir: true,
     rollupOptions: {
+      external: ['paintor'],
       // https://stackoverflow.com/questions/71500190/how-to-keep-root-level-export-when-building-with-vite-in-format-esm
       preserveEntrySignatures: 'exports-only',
       // https://rollupjs.org/guide/en/#big-list-of-options
