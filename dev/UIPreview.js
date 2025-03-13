@@ -1,5 +1,13 @@
 import { css, template } from 'paintor'
-import { Button, Checkbox, Input, Radio, Range, Switch } from '#paintor-ui'
+import {
+  Button,
+  Checkbox,
+  Input,
+  Radio,
+  Range,
+  Switch,
+  Textarea,
+} from '#paintor-ui'
 
 export const UIPreview = function() {
   // language=css
@@ -315,6 +323,43 @@ export const UIPreview = function() {
           Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
           Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
           Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
+        )
+      }),
+
+      x.hr(),
+
+      x.$if(true, () => {
+        x.div(
+          Textarea({ value: 'solid xl', variant: 'solid', size: 'xl' }),
+          Textarea({ value: 'solid l', variant: 'solid', size: 'l' }),
+          Textarea({ value: 'solid m', variant: 'solid', size: 'm' }),
+          Textarea({ value: 'solid s', variant: 'solid', size: 's' }),
+          Textarea({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+        ),
+        x.div(
+          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
+          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
+          Textarea({
+            value: 'neutral',
+            variant: 'outline',
+            size: 'm',
+            color: 'secondary'
+          }),
+          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
+          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
+          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
+          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
+          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
+        ),
+        x.div(
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
+          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
         )
       }),
 
