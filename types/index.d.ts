@@ -39,6 +39,17 @@ export function Checkbox(
   }
 ): import('paintor').Template
 
+export function Input(
+  props: {
+    variant?: Variant
+    color?: Color
+    size?: Size
+    class?: string
+    value?: string
+    onInput?: (ev: InputEvent) => void
+  }
+): import('paintor').Template
+
 export function Radio(
   props: {
     variant?: Variant

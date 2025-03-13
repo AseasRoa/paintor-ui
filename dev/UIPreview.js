@@ -1,5 +1,5 @@
 import { css, template } from 'paintor'
-import { Button, Checkbox, Radio, Range, Switch } from '#paintor-ui'
+import { Button, Checkbox, Input, Radio, Range, Switch } from '#paintor-ui'
 
 export const UIPreview = function() {
   // language=css
@@ -278,6 +278,43 @@ export const UIPreview = function() {
           Switch({ checked: true, variant: 'solid', size: 'm', color: 'success' }),
           Switch({ checked: true, variant: 'solid', size: 'm', color: 'warning' }),
           Switch({ checked: true, variant: 'solid', size: 'm', color: 'danger' }),
+        )
+      }),
+
+      x.hr(),
+
+      x.$if(true, () => {
+        x.div(
+          Input({ value: 'solid xl', variant: 'solid', size: 'xl' }),
+          Input({ value: 'solid l', variant: 'solid', size: 'l' }),
+          Input({ value: 'solid m', variant: 'solid', size: 'm' }),
+          Input({ value: 'solid s', variant: 'solid', size: 's' }),
+          Input({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+        ),
+        x.div(
+          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
+          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
+          Input({
+            value: 'neutral',
+            variant: 'outline',
+            size: 'm',
+            color: 'secondary'
+          }),
+          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
+          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
+          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
+          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
+          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
+        ),
+        x.div(
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
+          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
         )
       }),
 
