@@ -2,11 +2,11 @@ import { css, template } from 'paintor'
 import {
   Button,
   Checkbox,
-  Input,
   Radio,
   Slider,
   Switch,
   TextArea,
+  TextInput,
 } from '#paintor-ui'
 
 export const UIPreview = function() {
@@ -294,36 +294,36 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          Input({ value: 'solid xl', variant: 'solid', size: 'xl' }),
-          Input({ value: 'solid l', variant: 'solid', size: 'l' }),
-          Input({ value: 'solid m', variant: 'solid', size: 'm' }),
-          Input({ value: 'solid s', variant: 'solid', size: 's' }),
-          Input({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+          TextInput({ value: 'solid xl', variant: 'solid', size: 'xl' }),
+          TextInput({ value: 'solid l', variant: 'solid', size: 'l' }),
+          TextInput({ value: 'solid m', variant: 'solid', size: 'm' }),
+          TextInput({ value: 'solid s', variant: 'solid', size: 's' }),
+          TextInput({ value: 'solid xs', variant: 'solid', size: 'xs' }),
         ),
         x.div(
-          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
-          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
-          Input({
+          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
+          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
+          TextInput({
             value: 'neutral',
             variant: 'outline',
             size: 'm',
             color: 'secondary'
           }),
-          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
-          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
-          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
-          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
-          Input({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
+          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
+          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
+          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
+          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
+          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
         ),
         x.div(
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
-          Input({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
+          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
         )
       }),
 
