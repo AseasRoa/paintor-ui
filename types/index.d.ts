@@ -61,7 +61,7 @@ export function Radio(
   }
 ): import('paintor').Template
 
-export function Range(
+export function Slider(
   props: {
     min?: number,
     max?: number,

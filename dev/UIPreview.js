@@ -4,7 +4,7 @@ import {
   Checkbox,
   Input,
   Radio,
-  Range,
+  Slider,
   Switch,
   TextArea,
 } from '#paintor-ui'
@@ -368,36 +368,36 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          Range({ checked: true, variant: 'solid', size: 'xl' }),
-          Range({ checked: true, variant: 'solid', size: 'l' }),
-          Range({ checked: true, variant: 'solid', size: 'm' }),
-          Range({ checked: true, variant: 'solid', size: 's' }),
-          Range({ checked: true, variant: 'solid', size: 'xs' }),
+          Slider({ checked: true, variant: 'solid', size: 'xl' }),
+          Slider({ checked: true, variant: 'solid', size: 'l' }),
+          Slider({ checked: true, variant: 'solid', size: 'm' }),
+          Slider({ checked: true, variant: 'solid', size: 's' }),
+          Slider({ checked: true, variant: 'solid', size: 'xs' }),
         ),
         x.div(
-          Range({ checked: true, variant: 'outline', size: 'm', color: 'neutral' }),
-          Range({ checked: true, variant: 'outline', size: 'm', color: 'primary' }),
-          Range({
+          Slider({ checked: true, variant: 'outline', size: 'm', color: 'neutral' }),
+          Slider({ checked: true, variant: 'outline', size: 'm', color: 'primary' }),
+          Slider({
             checked: true,
             variant: 'outline',
             size: 'm',
             color: 'secondary'
           }),
-          Range({ checked: true, variant: 'outline', size: 'm', color: 'accent' }),
-          Range({ checked: true, variant: 'outline', size: 'm', color: 'info' }),
-          Range({ checked: true, variant: 'outline', size: 'm', color: 'success' }),
-          Range({ checked: true, variant: 'outline', size: 'm', color: 'warning' }),
-          Range({ checked: true, variant: 'outline', size: 'm', color: 'danger' }),
+          Slider({ checked: true, variant: 'outline', size: 'm', color: 'accent' }),
+          Slider({ checked: true, variant: 'outline', size: 'm', color: 'info' }),
+          Slider({ checked: true, variant: 'outline', size: 'm', color: 'success' }),
+          Slider({ checked: true, variant: 'outline', size: 'm', color: 'warning' }),
+          Slider({ checked: true, variant: 'outline', size: 'm', color: 'danger' }),
         ),
         x.div(
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'neutral' }),
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'primary' }),
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'secondary' }),
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'accent' }),
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'info' }),
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'success' }),
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'warning' }),
-          Range({ checked: true, variant: 'solid', size: 'm', color: 'danger' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'neutral' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'primary' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'secondary' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'accent' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'info' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'success' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'warning' }),
+          Slider({ checked: true, variant: 'solid', size: 'm', color: 'danger' }),
         )
       }),
     )
