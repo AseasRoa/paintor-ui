@@ -6,7 +6,7 @@ import {
   Radio,
   Range,
   Switch,
-  Textarea,
+  TextArea,
 } from '#paintor-ui'
 
 export const UIPreview = function() {
@@ -331,36 +331,36 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          Textarea({ value: 'solid xl', variant: 'solid', size: 'xl' }),
-          Textarea({ value: 'solid l', variant: 'solid', size: 'l' }),
-          Textarea({ value: 'solid m', variant: 'solid', size: 'm' }),
-          Textarea({ value: 'solid s', variant: 'solid', size: 's' }),
-          Textarea({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+          TextArea({ value: 'solid xl', variant: 'solid', size: 'xl' }),
+          TextArea({ value: 'solid l', variant: 'solid', size: 'l' }),
+          TextArea({ value: 'solid m', variant: 'solid', size: 'm' }),
+          TextArea({ value: 'solid s', variant: 'solid', size: 's' }),
+          TextArea({ value: 'solid xs', variant: 'solid', size: 'xs' }),
         ),
         x.div(
-          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
-          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
-          Textarea({
+          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
+          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
+          TextArea({
             value: 'neutral',
             variant: 'outline',
             size: 'm',
             color: 'secondary'
           }),
-          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
-          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
-          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
-          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
-          Textarea({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
+          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
+          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
+          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
+          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
+          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
         ),
         x.div(
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
-          Textarea({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral', autosize: false }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
+          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
         )
       }),
 

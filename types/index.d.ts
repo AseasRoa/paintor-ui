@@ -86,7 +86,7 @@ export function Switch(
   }
 ): import('paintor').Template
 
-export function Textarea(
+export function TextArea(
   props: {
     disabled?: boolean,
     rows?: number,
