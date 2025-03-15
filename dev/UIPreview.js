@@ -101,6 +101,7 @@ export const UIPreview = function() {
   main {
     background-color: var(--color-background);
     height: 100%;
+    font-size: 18rem;
   }
 `)
 
