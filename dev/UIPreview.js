@@ -2,6 +2,7 @@ import { css, template } from 'paintor'
 import {
   Button,
   Checkbox,
+  NumberInput,
   Radio,
   Slider,
   Switch,
@@ -324,6 +325,43 @@ export const UIPreview = function() {
           TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
           TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
           TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
+        )
+      }),
+
+      x.hr(),
+
+      x.$if(true, () => {
+        x.div(
+          NumberInput({ value: 'solid xl', variant: 'solid', size: 'xl' }),
+          NumberInput({ value: 'solid l', variant: 'solid', size: 'l' }),
+          NumberInput({ value: 'solid m', variant: 'solid', size: 'm' }),
+          NumberInput({ value: 'solid s', variant: 'solid', size: 's' }),
+          NumberInput({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+        ),
+        x.div(
+          NumberInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
+          NumberInput({ value: 'primary', variant: 'outline', size: 'm', color: 'primary' }),
+          NumberInput({
+            value: 'secondary',
+            variant: 'outline',
+            size: 'm',
+            color: 'secondary',
+          }),
+          NumberInput({ value: 'accent', variant: 'outline', size: 'm', color: 'accent' }),
+          NumberInput({ value: 'info', variant: 'outline', size: 'm', color: 'info' }),
+          NumberInput({ value: 'success', variant: 'outline', size: 'm', color: 'success' }),
+          NumberInput({ value: 'warning', variant: 'outline', size: 'm', color: 'warning' }),
+          NumberInput({ value: 'danger', variant: 'outline', size: 'm', color: 'danger' }),
+        ),
+        x.div(
+          NumberInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
+          NumberInput({ value: 'primary', variant: 'solid', size: 'm', color: 'primary' }),
+          NumberInput({ value: 'secondary', variant: 'solid', size: 'm', color: 'secondary' }),
+          NumberInput({ value: 'accent', variant: 'solid', size: 'm', color: 'accent' }),
+          NumberInput({ value: 'info', variant: 'solid', size: 'm', color: 'info' }),
+          NumberInput({ value: 'success', variant: 'solid', size: 'm', color: 'success' }),
+          NumberInput({ value: 'warning', variant: 'solid', size: 'm', color: 'warning' }),
+          NumberInput({ value: 'danger', variant: 'solid', size: 'm', color: 'danger' }),
         )
       }),
 
