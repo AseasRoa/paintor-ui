@@ -77,6 +77,7 @@ export function Switch(
 
 export function TextArea(
   props: {
+    autosize?: boolean,
     disabled?: boolean,
     rows?: number,
     variant?: Variant
@@ -88,15 +89,30 @@ export function TextArea(
   }
 ): import('paintor').Template
 
+export function NumberInput(
+  props: {
+    min?: number,
+    max?: number,
+    step?: number,
+    variant?: Variant
+    color?: Color
+    size?: Size
+    class?: string
+    value?: number
+    onInput?: (ev: InputEvent | PointerEvent) => void
+    onInvalid?: (ev: Event) => void
+  }
+): import('paintor').Template
+
 export function TextInput(
   props: {
-      pattern?: string
-      variant?: Variant
-      color?: Color
-      size?: Size
-      class?: string
-      value?: string
-      onInput?: (ev: InputEvent) => void
-      onInvalid?: (ev: Event) => void
+    pattern?: string
+    variant?: Variant
+    color?: Color
+    size?: Size
+    class?: string
+    value?: string
+    onInput?: (ev: InputEvent) => void
+    onInvalid?: (ev: Event) => void
   }
 ): import('paintor').Template

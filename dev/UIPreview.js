@@ -110,73 +110,31 @@ export const UIPreview = function() {
     x.main({ data: { theme: 'light' } },
       x.$if(true, () => {
         x.div(
-          Button({
-            value: 'solid xl', variant: 'solid', size: 'xl'
-          }),
-          Button({
-            value: 'solid l', variant: 'solid', size: 'l'
-          }),
-          Button({
-            value: 'solid m', variant: 'solid', size: 'm'
-          }),
-          Button({
-            value: 'solid s', variant: 'solid', size: 's'
-          }),
-          Button({
-            value: 'solid xs', variant: 'solid', size: 'xs'
-          }),
+          Button({ value: 'solid xl', variant: 'solid', size: 'xl' }),
+          Button({ value: 'solid l', variant: 'solid', size: 'l' }),
+          Button({ value: 'solid m', variant: 'solid', size: 'm' }),
+          Button({ value: 'solid s', variant: 'solid', size: 's' }),
+          Button({ value: 'solid xs', variant: 'solid', size: 'xs' }),
         ),
         x.div(
-          Button({
-            value: 'neutral', variant: 'outline', size: 'm', color: 'neutral'
-          }),
-          Button({
-            value: 'primary', variant: 'outline', size: 'm', color: 'primary'
-          }),
-          Button({
-            value: 'secondary', variant: 'outline', size: 'm', color: 'secondary'
-          }),
-          Button({
-            value: 'accent', variant: 'outline', size: 'm', color: 'accent'
-          }),
-          Button({
-            value: 'info', variant: 'outline', size: 'm', color: 'info'
-          }),
-          Button({
-            value: 'success', variant: 'outline', size: 'm', color: 'success'
-          }),
-          Button({
-            value: 'warning', variant: 'outline', size: 'm', color: 'warning'
-          }),
-          Button({
-            value: 'danger', variant: 'outline', size: 'm', color: 'danger'
-          }),
+          Button({ value: 'neutral', variant: 'outline', color: 'neutral' }),
+          Button({ value: 'primary', variant: 'outline', color: 'primary' }),
+          Button({ value: 'secondary', variant: 'outline', color: 'secondary' }),
+          Button({ value: 'accent', variant: 'outline', color: 'accent' }),
+          Button({ value: 'info', variant: 'outline', color: 'info' }),
+          Button({ value: 'success', variant: 'outline', color: 'success' }),
+          Button({ value: 'warning', variant: 'outline', color: 'warning' }),
+          Button({ value: 'danger', variant: 'outline', color: 'danger' }),
         ),
         x.div(
-          Button({
-            value: 'neutral', variant: 'solid', size: 'm', color: 'neutral'
-          }),
-          Button({
-            value: 'primary', variant: 'solid', size: 'm', color: 'primary'
-          }),
-          Button({
-            value: 'secondary', variant: 'solid', size: 'm', color: 'secondary'
-          }),
-          Button({
-            value: 'accent', variant: 'solid', size: 'm', color: 'accent'
-          }),
-          Button({
-            value: 'info', variant: 'solid', size: 'm', color: 'info'
-          }),
-          Button({
-            value: 'success', variant: 'solid', size: 'm', color: 'success'
-          }),
-          Button({
-            value: 'warning', variant: 'solid', size: 'm', color: 'warning'
-          }),
-          Button({
-            value: 'danger', variant: 'solid', size: 'm', color: 'danger'
-          }),
+          Button({ value: 'neutral', variant: 'solid', color: 'neutral' }),
+          Button({ value: 'primary', variant: 'solid', color: 'primary' }),
+          Button({ value: 'secondary', variant: 'solid', color: 'secondary' }),
+          Button({ value: 'accent', variant: 'solid', color: 'accent' }),
+          Button({ value: 'info', variant: 'solid', color: 'info' }),
+          Button({ value: 'success', variant: 'solid', color: 'success' }),
+          Button({ value: 'warning', variant: 'solid', color: 'warning' }),
+          Button({ value: 'danger', variant: 'solid', color: 'danger' }),
         )
       }),
 
@@ -184,36 +142,31 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          Checkbox({ checked: true, variant: 'solid', size: 'xl' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'l' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm' }),
-          Checkbox({ checked: true, variant: 'solid', size: 's' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'xs' }),
+          Checkbox({ variant: 'solid', size: 'xl', checked: true }),
+          Checkbox({ variant: 'solid', size: 'l', checked: true }),
+          Checkbox({ variant: 'solid', size: 'm', checked: true }),
+          Checkbox({ variant: 'solid', size: 's', checked: true }),
+          Checkbox({ variant: 'solid', size: 'xs', checked: true }),
         ),
         x.div(
-          Checkbox({ checked: true, variant: 'outline', size: 'm', color: 'neutral' }),
-          Checkbox({ checked: true, variant: 'outline', size: 'm', color: 'primary' }),
-          Checkbox({
-            checked: true,
-            variant: 'outline',
-            size: 'm',
-            color: 'secondary'
-          }),
-          Checkbox({ checked: true, variant: 'outline', size: 'm', color: 'accent' }),
-          Checkbox({ checked: true, variant: 'outline', size: 'm', color: 'info' }),
-          Checkbox({ checked: true, variant: 'outline', size: 'm', color: 'success' }),
-          Checkbox({ checked: true, variant: 'outline', size: 'm', color: 'warning' }),
-          Checkbox({ checked: true, variant: 'outline', size: 'm', color: 'danger' }),
+          Checkbox({ variant: 'outline', color: 'neutral', checked: true }),
+          Checkbox({ variant: 'outline', color: 'primary', checked: true }),
+          Checkbox({ variant: 'outline', color: 'secondary', checked: true }),
+          Checkbox({ variant: 'outline', color: 'accent', checked: true }),
+          Checkbox({ variant: 'outline', color: 'info', checked: true }),
+          Checkbox({ variant: 'outline', color: 'success', checked: true }),
+          Checkbox({ variant: 'outline', color: 'warning', checked: true }),
+          Checkbox({ variant: 'outline', color: 'danger', checked: true }),
         ),
         x.div(
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'neutral' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'primary' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'secondary' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'accent' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'info' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'success' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'warning' }),
-          Checkbox({ checked: true, variant: 'solid', size: 'm', color: 'danger' }),
+          Checkbox({ variant: 'solid', color: 'neutral', checked: true }),
+          Checkbox({ variant: 'solid', color: 'primary', checked: true }),
+          Checkbox({ variant: 'solid', color: 'secondary', checked: true }),
+          Checkbox({ variant: 'solid', color: 'accent', checked: true }),
+          Checkbox({ variant: 'solid', color: 'info', checked: true }),
+          Checkbox({ variant: 'solid', color: 'success', checked: true }),
+          Checkbox({ variant: 'solid', color: 'warning', checked: true }),
+          Checkbox({ variant: 'solid', color: 'danger', checked: true }),
         )
       }),
 
@@ -221,36 +174,31 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          Radio({ checked: true, variant: 'solid', size: 'xl' }),
-          Radio({ checked: true, variant: 'solid', size: 'l' }),
-          Radio({ checked: true, variant: 'solid', size: 'm' }),
-          Radio({ checked: true, variant: 'solid', size: 's' }),
-          Radio({ checked: true, variant: 'solid', size: 'xs' }),
+          Radio({ variant: 'solid', size: 'xl', checked: true }),
+          Radio({ variant: 'solid', size: 'l', checked: true }),
+          Radio({ variant: 'solid', size: 'm', checked: true }),
+          Radio({ variant: 'solid', size: 's', checked: true }),
+          Radio({ variant: 'solid', size: 'xs', checked: true }),
         ),
         x.div(
-          Radio({ checked: true, variant: 'outline', size: 'm', color: 'neutral' }),
-          Radio({ checked: true, variant: 'outline', size: 'm', color: 'primary' }),
-          Radio({
-            checked: true,
-            variant: 'outline',
-            size: 'm',
-            color: 'secondary'
-          }),
-          Radio({ checked: true, variant: 'outline', size: 'm', color: 'accent' }),
-          Radio({ checked: true, variant: 'outline', size: 'm', color: 'info' }),
-          Radio({ checked: true, variant: 'outline', size: 'm', color: 'success' }),
-          Radio({ checked: true, variant: 'outline', size: 'm', color: 'warning' }),
-          Radio({ checked: true, variant: 'outline', size: 'm', color: 'danger' }),
+          Radio({ variant: 'outline', color: 'neutral', checked: true }),
+          Radio({ variant: 'outline', color: 'primary', checked: true }),
+          Radio({ variant: 'outline', color: 'secondary', checked: true }),
+          Radio({ variant: 'outline', color: 'accent', checked: true }),
+          Radio({ variant: 'outline', color: 'info', checked: true }),
+          Radio({ variant: 'outline', color: 'success', checked: true }),
+          Radio({ variant: 'outline', color: 'warning', checked: true }),
+          Radio({ variant: 'outline', color: 'danger', checked: true }),
         ),
         x.div(
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'neutral' }),
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'primary' }),
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'secondary' }),
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'accent' }),
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'info' }),
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'success' }),
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'warning' }),
-          Radio({ checked: true, variant: 'solid', size: 'm', color: 'danger' }),
+          Radio({ variant: 'solid', color: 'neutral', checked: true }),
+          Radio({ variant: 'solid', color: 'primary', checked: true }),
+          Radio({ variant: 'solid', color: 'secondary', checked: true }),
+          Radio({ variant: 'solid', color: 'accent', checked: true }),
+          Radio({ variant: 'solid', color: 'info', checked: true }),
+          Radio({ variant: 'solid', color: 'success', checked: true }),
+          Radio({ variant: 'solid', color: 'warning', checked: true }),
+          Radio({ variant: 'solid', color: 'danger', checked: true }),
         )
       }),
 
@@ -258,36 +206,31 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          Switch({ checked: true, variant: 'solid', size: 'xl' }),
-          Switch({ checked: true, variant: 'solid', size: 'l' }),
-          Switch({ checked: true, variant: 'solid', size: 'm' }),
-          Switch({ checked: true, variant: 'solid', size: 's' }),
-          Switch({ checked: true, variant: 'solid', size: 'xs' }),
+          Switch({ variant: 'solid', size: 'xl', checked: true }),
+          Switch({ variant: 'solid', size: 'l', checked: true }),
+          Switch({ variant: 'solid', size: 'm', checked: true }),
+          Switch({ variant: 'solid', size: 's', checked: true }),
+          Switch({ variant: 'solid', size: 'xs', checked: true }),
         ),
         x.div(
-          Switch({ checked: true, variant: 'outline', size: 'm', color: 'neutral' }),
-          Switch({ checked: true, variant: 'outline', size: 'm', color: 'primary' }),
-          Switch({
-            checked: true,
-            variant: 'outline',
-            size: 'm',
-            color: 'secondary'
-          }),
-          Switch({ checked: true, variant: 'outline', size: 'm', color: 'accent' }),
-          Switch({ checked: true, variant: 'outline', size: 'm', color: 'info' }),
-          Switch({ checked: true, variant: 'outline', size: 'm', color: 'success' }),
-          Switch({ checked: true, variant: 'outline', size: 'm', color: 'warning' }),
-          Switch({ checked: true, variant: 'outline', size: 'm', color: 'danger' }),
+          Switch({ variant: 'outline', color: 'neutral', checked: true }),
+          Switch({ variant: 'outline', color: 'primary', checked: true }),
+          Switch({ variant: 'outline', color: 'secondary', checked: true }),
+          Switch({ variant: 'outline', color: 'accent', checked: true }),
+          Switch({ variant: 'outline', color: 'info', checked: true }),
+          Switch({ variant: 'outline', color: 'success', checked: true }),
+          Switch({ variant: 'outline', color: 'warning', checked: true }),
+          Switch({ variant: 'outline', color: 'danger', checked: true }),
         ),
         x.div(
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'neutral' }),
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'primary' }),
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'secondary' }),
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'accent' }),
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'info' }),
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'success' }),
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'warning' }),
-          Switch({ checked: true, variant: 'solid', size: 'm', color: 'danger' }),
+          Switch({ variant: 'solid', color: 'neutral', checked: true }),
+          Switch({ variant: 'solid', color: 'primary', checked: true }),
+          Switch({ variant: 'solid', color: 'secondary', checked: true }),
+          Switch({ variant: 'solid', color: 'accent', checked: true }),
+          Switch({ variant: 'solid', color: 'info', checked: true }),
+          Switch({ variant: 'solid', color: 'success', checked: true }),
+          Switch({ variant: 'solid', color: 'warning', checked: true }),
+          Switch({ variant: 'solid', color: 'danger', checked: true }),
         )
       }),
 
@@ -295,36 +238,31 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          TextInput({ value: 'solid xl', variant: 'solid', size: 'xl' }),
-          TextInput({ value: 'solid l', variant: 'solid', size: 'l' }),
-          TextInput({ value: 'solid m', variant: 'solid', size: 'm' }),
-          TextInput({ value: 'solid s', variant: 'solid', size: 's' }),
-          TextInput({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+          TextInput({ variant: 'solid', size: 'xl', value: 'solid xl' }),
+          TextInput({ variant: 'solid', size: 'l', value: 'solid l' }),
+          TextInput({ variant: 'solid', size: 'm', value: 'solid m' }),
+          TextInput({ variant: 'solid', size: 's', value: 'solid s' }),
+          TextInput({ variant: 'solid', size: 'xs', value: 'solid xs' }),
         ),
         x.div(
-          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
-          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
-          TextInput({
-            value: 'neutral',
-            variant: 'outline',
-            size: 'm',
-            color: 'secondary'
-          }),
-          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
-          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
-          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
-          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
-          TextInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
+          TextInput({ variant: 'outline', color: 'neutral', value: 'neutral' }),
+          TextInput({ variant: 'outline', color: 'primary', value: 'primary' }),
+          TextInput({ variant: 'outline', color: 'secondary', value: 'secondary' }),
+          TextInput({ variant: 'outline', color: 'accent', value: 'accent' }),
+          TextInput({ variant: 'outline', color: 'info', value: 'info' }),
+          TextInput({ variant: 'outline', color: 'success', value: 'success' }),
+          TextInput({ variant: 'outline', color: 'warning', value: 'warning' }),
+          TextInput({ variant: 'outline', color: 'danger', value: 'danger' }),
         ),
         x.div(
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
-          TextInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
+          TextInput({ variant: 'solid', color: 'neutral', value: 'neutral' }),
+          TextInput({ variant: 'solid', color: 'primary', value: 'primary' }),
+          TextInput({ variant: 'solid', color: 'secondary', value: 'secondary' }),
+          TextInput({ variant: 'solid', color: 'accent', value: 'accent' }),
+          TextInput({ variant: 'solid', color: 'info', value: 'info' }),
+          TextInput({ variant: 'solid', color: 'success', value: 'success' }),
+          TextInput({ variant: 'solid', color: 'warning', value: 'warning' }),
+          TextInput({ variant: 'solid', color: 'danger', value: 'danger' }),
         )
       }),
 
@@ -332,36 +270,31 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          NumberInput({ value: 'solid xl', variant: 'solid', size: 'xl' }),
-          NumberInput({ value: 'solid l', variant: 'solid', size: 'l' }),
-          NumberInput({ value: 'solid m', variant: 'solid', size: 'm' }),
-          NumberInput({ value: 'solid s', variant: 'solid', size: 's' }),
-          NumberInput({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+          NumberInput({ variant: 'solid', size: 'xl', value: 0 }),
+          NumberInput({ variant: 'solid', size: 'l', value: 0 }),
+          NumberInput({ variant: 'solid', size: 'm', value: 0 }),
+          NumberInput({ variant: 'solid', size: 's', value: 0 }),
+          NumberInput({ variant: 'solid', size: 'xs', value: 0 }),
         ),
         x.div(
-          NumberInput({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
-          NumberInput({ value: 'primary', variant: 'outline', size: 'm', color: 'primary' }),
-          NumberInput({
-            value: 'secondary',
-            variant: 'outline',
-            size: 'm',
-            color: 'secondary',
-          }),
-          NumberInput({ value: 'accent', variant: 'outline', size: 'm', color: 'accent' }),
-          NumberInput({ value: 'info', variant: 'outline', size: 'm', color: 'info' }),
-          NumberInput({ value: 'success', variant: 'outline', size: 'm', color: 'success' }),
-          NumberInput({ value: 'warning', variant: 'outline', size: 'm', color: 'warning' }),
-          NumberInput({ value: 'danger', variant: 'outline', size: 'm', color: 'danger' }),
+          NumberInput({ variant: 'outline', color: 'neutral', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'primary', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'secondary', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'accent', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'info', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'success', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'warning', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'danger', value: 0 }),
         ),
         x.div(
-          NumberInput({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral' }),
-          NumberInput({ value: 'primary', variant: 'solid', size: 'm', color: 'primary' }),
-          NumberInput({ value: 'secondary', variant: 'solid', size: 'm', color: 'secondary' }),
-          NumberInput({ value: 'accent', variant: 'solid', size: 'm', color: 'accent' }),
-          NumberInput({ value: 'info', variant: 'solid', size: 'm', color: 'info' }),
-          NumberInput({ value: 'success', variant: 'solid', size: 'm', color: 'success' }),
-          NumberInput({ value: 'warning', variant: 'solid', size: 'm', color: 'warning' }),
-          NumberInput({ value: 'danger', variant: 'solid', size: 'm', color: 'danger' }),
+          NumberInput({ variant: 'solid', color: 'neutral', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'primary', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'secondary', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'accent', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'info', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'success', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'warning', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'danger', value: 0 }),
         )
       }),
 
@@ -376,29 +309,24 @@ export const UIPreview = function() {
           TextArea({ value: 'solid xs', variant: 'solid', size: 'xs' }),
         ),
         x.div(
-          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'neutral' }),
-          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'primary' }),
-          TextArea({
-            value: 'neutral',
-            variant: 'outline',
-            size: 'm',
-            color: 'secondary'
-          }),
-          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'accent' }),
-          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'info' }),
-          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'success' }),
-          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'warning' }),
-          TextArea({ value: 'neutral', variant: 'outline', size: 'm', color: 'danger' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'neutral' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'primary' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'secondary' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'accent' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'info' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'success' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'warning' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'danger' }),
         ),
         x.div(
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'neutral', autosize: false }),
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'primary' }),
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'secondary' }),
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'accent' }),
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'info' }),
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'success' }),
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'warning' }),
-          TextArea({ value: 'neutral', variant: 'solid', size: 'm', color: 'danger' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'neutral' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'primary' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'secondary' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'accent' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'info' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'success' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'warning' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'danger' }),
         )
       }),
 
@@ -406,36 +334,31 @@ export const UIPreview = function() {
 
       x.$if(true, () => {
         x.div(
-          Slider({ checked: true, variant: 'solid', size: 'xl' }),
-          Slider({ checked: true, variant: 'solid', size: 'l' }),
-          Slider({ checked: true, variant: 'solid', size: 'm' }),
-          Slider({ checked: true, variant: 'solid', size: 's' }),
-          Slider({ checked: true, variant: 'solid', size: 'xs' }),
+          Slider({ variant: 'solid', size: 'xl' }),
+          Slider({ variant: 'solid', size: 'l' }),
+          Slider({ variant: 'solid', size: 'm' }),
+          Slider({ variant: 'solid', size: 's' }),
+          Slider({ variant: 'solid', size: 'xs' }),
         ),
         x.div(
-          Slider({ checked: true, variant: 'outline', size: 'm', color: 'neutral' }),
-          Slider({ checked: true, variant: 'outline', size: 'm', color: 'primary' }),
-          Slider({
-            checked: true,
-            variant: 'outline',
-            size: 'm',
-            color: 'secondary'
-          }),
-          Slider({ checked: true, variant: 'outline', size: 'm', color: 'accent' }),
-          Slider({ checked: true, variant: 'outline', size: 'm', color: 'info' }),
-          Slider({ checked: true, variant: 'outline', size: 'm', color: 'success' }),
-          Slider({ checked: true, variant: 'outline', size: 'm', color: 'warning' }),
-          Slider({ checked: true, variant: 'outline', size: 'm', color: 'danger' }),
+          Slider({ variant: 'outline', color: 'neutral' }),
+          Slider({ variant: 'outline', color: 'primary' }),
+          Slider({ variant: 'outline', color: 'secondary' }),
+          Slider({ variant: 'outline', color: 'accent' }),
+          Slider({ variant: 'outline', color: 'info' }),
+          Slider({ variant: 'outline', color: 'success' }),
+          Slider({ variant: 'outline', color: 'warning' }),
+          Slider({ variant: 'outline', color: 'danger' }),
         ),
         x.div(
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'neutral' }),
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'primary' }),
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'secondary' }),
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'accent' }),
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'info' }),
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'success' }),
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'warning' }),
-          Slider({ checked: true, variant: 'solid', size: 'm', color: 'danger' }),
+          Slider({ variant: 'solid', color: 'neutral' }),
+          Slider({ variant: 'solid', color: 'primary' }),
+          Slider({ variant: 'solid', color: 'secondary' }),
+          Slider({ variant: 'solid', color: 'accent' }),
+          Slider({ variant: 'solid', color: 'info' }),
+          Slider({ variant: 'solid', color: 'success' }),
+          Slider({ variant: 'solid', color: 'warning' }),
+          Slider({ variant: 'solid', color: 'danger' }),
         )
       }),
     )
