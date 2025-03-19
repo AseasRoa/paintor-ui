@@ -117,6 +117,13 @@ export const UIPreview = function() {
           Button({ value: 'solid xs', variant: 'solid', size: 'xs' }),
         ),
         x.div(
+          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'none' }),
+          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 's' }),
+          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'm' }),
+          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'l' }),
+          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'full' }),
+        ),
+        x.div(
           Button({ value: 'neutral', variant: 'outline', color: 'neutral' }),
           Button({ value: 'primary', variant: 'outline', color: 'primary' }),
           Button({ value: 'secondary', variant: 'outline', color: 'secondary' }),

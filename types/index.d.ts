@@ -5,6 +5,7 @@ export type Variant
   | 'solid'
   | 'none'
 export type Size = 'xs' | 's' | 'm' | 'l' | 'xl'
+export type BorderRadiusSize = 'none' | 's' | 'm' | 'l' | 'full'
 export type Color
   = 'neutral'
   | 'primary'
@@ -21,6 +22,7 @@ export function Button(
     variant?: Variant
     color?: Color
     size?: Size
+    borderRadius?: BorderRadiusSize
     class?: string
     icon?: string
     onClick?: (ev: PointerEvent) => void
@@ -33,6 +35,7 @@ export function Checkbox(
     variant?: Variant
     color?: Color
     size?: Size
+    borderRadius?: BorderRadiusSize
     class?: string
     checked?: boolean
     onChange?: (ev: Event) => void
@@ -69,6 +72,7 @@ export function Switch(
     variant?: Variant
     color?: Color
     size?: Size
+    borderRadius?: BorderRadiusSize
     class?: string
     checked?: boolean
     onChange?: (ev: Event) => void
@@ -83,6 +87,7 @@ export function TextArea(
     variant?: Variant
     color?: Color
     size?: Size
+    borderRadius?: BorderRadiusSize
     class?: string
     value?: string
     onInput?: (ev: InputEvent) => void
@@ -97,6 +102,7 @@ export function NumberInput(
     variant?: Variant
     color?: Color
     size?: Size
+    borderRadius?: BorderRadiusSize
     class?: string
     value?: number
     onInput?: (ev: InputEvent | PointerEvent) => void
@@ -110,6 +116,7 @@ export function TextInput(
     variant?: Variant
     color?: Color
     size?: Size
+    borderRadius?: BorderRadiusSize
     class?: string
     value?: string
     onInput?: (ev: InputEvent) => void
