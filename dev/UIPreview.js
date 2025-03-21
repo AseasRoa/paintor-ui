@@ -4,6 +4,7 @@ import {
   Checkbox,
   NumberInput,
   Radio,
+  Select,
   Slider,
   Switch,
   TextArea,
@@ -238,6 +239,45 @@ export const UIPreview = function() {
           Switch({ variant: 'solid', color: 'success', checked: true }),
           Switch({ variant: 'solid', color: 'warning', checked: true }),
           Switch({ variant: 'solid', color: 'danger', checked: true }),
+        )
+      }),
+
+      x.hr(),
+
+      x.$if(true, () => {
+        const options = [
+          { value: 'a', label: 'Label A' },
+          { value: 'b', label: 'Label B' },
+          { value: 'c', label: 'This is Label C and it is a bit longer' },
+        ]
+        const selectedOption = options[1]
+
+        x.div(
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'xl', }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'l', }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'm', }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 's', }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'xs', }),
+        ),
+        x.div(
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'neutral' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'primary' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'secondary' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'accent' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'info' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'success' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'warning' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'danger' }),
+        ),
+        x.div(
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'neutral' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'primary' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'secondary' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'accent' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'info' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'success' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'warning' }),
+          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'danger' }),
         )
       }),
 

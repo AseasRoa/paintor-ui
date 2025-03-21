@@ -15,6 +15,7 @@ export type Color
   | 'success'
   | 'warning'
   | 'danger'
+export type Option = { label: string, value: string }
 
 export function Button(
   props: {
@@ -29,7 +30,6 @@ export function Button(
   }
 ): import('paintor').Template
 
-
 export function Checkbox(
   props: {
     variant?: Variant
@@ -42,6 +42,22 @@ export function Checkbox(
   }
 ): import('paintor').Template
 
+export function NumberInput(
+  props: {
+    min?: number,
+    max?: number,
+    step?: number,
+    variant?: Variant
+    color?: Color
+    size?: Size
+    borderRadius?: BorderRadiusSize
+    class?: string
+    value?: number
+    onInput?: (ev: InputEvent | PointerEvent) => void
+    onInvalid?: (ev: Event) => void
+  }
+): import('paintor').Template
+
 export function Radio(
   props: {
     variant?: Variant
@@ -50,6 +66,19 @@ export function Radio(
     class?: string
     checked?: boolean
     onChange?: (ev: Event) => void
+  }
+): import('paintor').Template
+
+export function Select(
+  props: {
+    options?: Option[]
+    selectedOption?: Option
+    variant?: Variant
+    color?: Color
+    size?: Size
+    borderRadius?: BorderRadiusSize
+    class?: string
+    onChange?: (option: Option) => void
   }
 ): import('paintor').Template
 
@@ -91,22 +120,6 @@ export function TextArea(
     class?: string
     value?: string
     onInput?: (ev: InputEvent) => void
-  }
-): import('paintor').Template
-
-export function NumberInput(
-  props: {
-    min?: number,
-    max?: number,
-    step?: number,
-    variant?: Variant
-    color?: Color
-    size?: Size
-    borderRadius?: BorderRadiusSize
-    class?: string
-    value?: number
-    onInput?: (ev: InputEvent | PointerEvent) => void
-    onInvalid?: (ev: Event) => void
   }
 ): import('paintor').Template
 
