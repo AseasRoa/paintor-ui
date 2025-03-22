@@ -15,7 +15,7 @@ export type Color
   | 'success'
   | 'warning'
   | 'danger'
-export type Option = { label: string, value: string }
+export type Option = { label: string, value: string | number | boolean }
 
 export function Button(
   props: {
@@ -71,8 +71,8 @@ export function Radio(
 
 export function Select(
   props: {
-    options?: Option[]
-    selectedOption?: Option
+    options: Option[]
+    selectedOption?: Option | string | number | boolean
     variant?: Variant
     color?: Color
     size?: Size
