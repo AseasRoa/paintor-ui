@@ -1,0 +1,22 @@
+export type IconVariant = 'fill' | 'outline' | 'color'
+export type IconName =
+  // Brands
+  'brands/apple'
+  | 'brands/wordpress'
+  // Web
+  | 'web/broken-link'
+  | 'web/browser-arc-color'
+  | 'web/browser-brave-color'
+  | 'web/browser-chrome'
+  | 'web/browser-chrome-color'
+  | 'web/browser-edge'
+  | 'web/browser-edge-color'
+  | 'web/browser-firefox'
+  | 'web/browser-firefox-color'
+  | 'web/browser-ie'
+  | 'web/browser-opera'
+  | 'web/browser-opera-color'
+  | 'web/browser-safari'
+  | 'web/browser-safari-color'
+  | 'web/cloud-outlined'
+  | 'web/image-not-found'

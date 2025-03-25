@@ -17,6 +17,19 @@ export type Color
   | 'danger'
 export type Option = { label: string, value: string | number | boolean }
 
+/* Icons */
+
+export function Icon(
+  props: {
+      name: string,
+      fill?: string,
+      size?: string,
+      style?: string
+  }
+)
+
+/* Components */
+
 export function Button(
   props: {
     value?: string
