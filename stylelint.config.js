@@ -160,7 +160,7 @@ export default {
     /**
      * Empty lines
      */
-    'at-rule-empty-line-before': 'always',
+    'at-rule-empty-line-before': 'never',
     'comment-empty-line-before': 'always',
     'custom-property-empty-line-before': 'never',
     'declaration-empty-line-before': 'never',
