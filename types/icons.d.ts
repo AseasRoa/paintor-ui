@@ -1,4 +1,3 @@
-export type IconVariant = 'fill' | 'outline' | 'color'
 export type IconName =
   // Brands
   'brands/apple'
@@ -20,3 +19,22 @@ export type IconName =
   | 'web/browser-safari-color'
   | 'web/cloud-outlined'
   | 'web/image-not-found'
+  // UI
+  | 'ui/minus'
+  | 'ui/minus-round-outline'
+  | 'ui/minus-round-fill'
+  | 'ui/minus-square-outline'
+  | 'ui/minus-line'
+  | 'ui/minus-line-round-outline'
+  | 'ui/minus-line-round-fill'
+  | 'ui/minus-line-square-outline'
+  | 'ui/minus-line-square-fill'
+  | 'ui/plus'
+  | 'ui/plus-round-outline'
+  | 'ui/plus-round-fill'
+  | 'ui/plus-square-outline'
+  | 'ui/plus-line'
+  | 'ui/plus-line-round-outline'
+  | 'ui/plus-line-round-fill'
+  | 'ui/plus-line-square-outline'
+  | 'ui/plus-line-square-fill'
