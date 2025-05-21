@@ -2,6 +2,7 @@ import { css, template } from 'paintor'
 import {
   Button,
   Checkbox,
+  Icon,
   NumberInput,
   Radio,
   Select,
@@ -14,98 +15,98 @@ import {
 export const UIPreview = function() {
   // language=css
   css(`
-  :root, [data-theme=light] {
-    color-scheme: light;
+    :root, [data-theme=light] {
+      color-scheme: light;
 
-    --color-background-100: hsl(0, 0%, 40%);
-    --color-on-background-100: hsl(0, 0%, 10%);
+      --color-background-100: hsl(0, 0%, 40%);
+      --color-on-background-100: hsl(0, 0%, 10%);
 
-    --color-background-200: hsl(0, 0%, 55%);
-    --color-on-background-200: hsl(0, 0%, 10%);
+      --color-background-200: hsl(0, 0%, 55%);
+      --color-on-background-200: hsl(0, 0%, 10%);
 
-    --color-background-300: hsl(0, 0%, 70%);
-    --color-on-background-300: hsl(0, 0%, 10%);
+      --color-background-300: hsl(0, 0%, 70%);
+      --color-on-background-300: hsl(0, 0%, 10%);
 
-    --color-background-400: hsl(0, 0%, 85%);
-    --color-on-background-400: hsl(0, 0%, 10%);
+      --color-background-400: hsl(0, 0%, 85%);
+      --color-on-background-400: hsl(0, 0%, 10%);
 
-    --color-background: hsl(0, 0%, 100%);
-    --color-on-background: hsl(0, 0%, 10%);
+      --color-background: hsl(0, 0%, 100%);
+      --color-on-background: hsl(0, 0%, 10%);
 
-    --color-background-600: hsl(0, 0%, 100%);
-    --color-on-background-600: hsl(0, 0%, 10%);
+      --color-background-600: hsl(0, 0%, 100%);
+      --color-on-background-600: hsl(0, 0%, 10%);
 
-    --color-background-700: hsl(0, 0%, 100%);
-    --color-on-background-700: hsl(0, 0%, 10%);
+      --color-background-700: hsl(0, 0%, 100%);
+      --color-on-background-700: hsl(0, 0%, 10%);
 
-    --color-background-800: hsl(0, 0%, 100%);
-    --color-on-background-800: hsl(0, 0%, 10%);
+      --color-background-800: hsl(0, 0%, 100%);
+      --color-on-background-800: hsl(0, 0%, 10%);
 
-    --color-background-900: hsl(0, 0%, 100%);
-    --color-on-background-900: hsl(0, 0%, 10%);
+      --color-background-900: hsl(0, 0%, 100%);
+      --color-on-background-900: hsl(0, 0%, 10%);
 
-    --color-neutral: hsl(0, 0%, 50%);
-    --color-on-neutral: hsl(0 0% 100%);
+      --color-neutral: hsl(0, 0%, 50%);
+      --color-on-neutral: hsl(0 0% 100%);
 
-    --color-primary: hsl(207 100% 37%);
-    --color-on-primary: hsl(0 0% 100%);
+      --color-primary: hsl(207 100% 37%);
+      --color-on-primary: hsl(0 0% 100%);
 
-    --color-secondary: hsl(315, 76%, 58%);
-    --color-on-secondary: hsl(0 0% 100%);
+      --color-secondary: hsl(315, 76%, 58%);
+      --color-on-secondary: hsl(0 0% 100%);
 
-    --color-accent: hsl(16.85 93.55% 42.55%);
-    --color-on-accent: hsl(0 0% 100%);
+      --color-accent: hsl(16.85 93.55% 42.55%);
+      --color-on-accent: hsl(0 0% 100%);
 
-    --color-info: hsl(196, 100%, 30%);
-    --color-on-info: hsl(0 0% 100%);
+      --color-info: hsl(196, 100%, 30%);
+      --color-on-info: hsl(0 0% 100%);
 
-    --color-success: hsl(130, 100%, 30%);
-    --color-on-success: hsl(0 0% 100%);
+      --color-success: hsl(130, 100%, 30%);
+      --color-on-success: hsl(0 0% 100%);
 
-    --color-warning: hsl(30, 100%, 50%);
-    --color-on-warning: hsl(0 0% 100%);
+      --color-warning: hsl(30, 100%, 50%);
+      --color-on-warning: hsl(0 0% 100%);
 
-    --color-danger: hsl(0, 100%, 50%);
-    --color-on-danger: hsl(0 0% 100%);
-  }
+      --color-danger: hsl(0, 100%, 50%);
+      --color-on-danger: hsl(0 0% 100%);
+    }
 
-  :root, [data-theme=dark] {
-    color-scheme: dark;
+    :root, [data-theme=dark] {
+      color-scheme: dark;
 
-    --color-background-100: hsl(0, 0%, 0%);
-    --color-on-background-100: hsl(0, 0%, 100%);
+      --color-background-100: hsl(0, 0%, 0%);
+      --color-on-background-100: hsl(0, 0%, 100%);
 
-    --color-background-200: hsl(0, 0%, 6%);
-    --color-on-background-200: hsl(0, 0%, 100%);
+      --color-background-200: hsl(0, 0%, 6%);
+      --color-on-background-200: hsl(0, 0%, 100%);
 
-    --color-background-300: hsl(0, 0%, 10%);
-    --color-on-background-300: hsl(0, 0%, 100%);
+      --color-background-300: hsl(0, 0%, 10%);
+      --color-on-background-300: hsl(0, 0%, 100%);
 
-    --color-background-400: hsl(0, 0%, 14%);
-    --color-on-background-400: hsl(0, 0%, 100%);
+      --color-background-400: hsl(0, 0%, 14%);
+      --color-on-background-400: hsl(0, 0%, 100%);
 
-    --color-background: hsl(0, 0%, 18%);
-    --color-on-background: hsl(0, 0%, 100%);
+      --color-background: hsl(0, 0%, 18%);
+      --color-on-background: hsl(0, 0%, 100%);
 
-    --color-background-600: hsl(0, 0%, 22%);
-    --color-on-background-600: hsl(0, 0%, 100%);
+      --color-background-600: hsl(0, 0%, 22%);
+      --color-on-background-600: hsl(0, 0%, 100%);
 
-    --color-background-700: hsl(0, 0%, 26%);
-    --color-on-background-700: hsl(0, 0%, 100%);
+      --color-background-700: hsl(0, 0%, 26%);
+      --color-on-background-700: hsl(0, 0%, 100%);
 
-    --color-background-800: hsl(0, 0%, 30%);
-    --color-on-background-800: hsl(0, 0%, 100%);
+      --color-background-800: hsl(0, 0%, 30%);
+      --color-on-background-800: hsl(0, 0%, 100%);
 
-    --color-background-900: hsl(0, 0%, 34%);
-    --color-on-background-900: hsl(0, 0%, 100%);
-  }
+      --color-background-900: hsl(0, 0%, 34%);
+      --color-on-background-900: hsl(0, 0%, 100%);
+    }
 
-  main {
-    background-color: var(--color-background);
-    height: 100%;
-    font-size: 18rem;
-  }
-`)
+    main {
+      background-color: var(--color-background);
+      height: 100%;
+      font-size: 18rem;
+    }
+  `)
 
   return template((x) => {
     x.main({ data: { theme: 'light' } },
@@ -118,16 +119,45 @@ export const UIPreview = function() {
           Button({ value: 'solid xs', variant: 'solid', size: 'xs' }),
         ),
         x.div(
-          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'none' }),
-          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 's' }),
-          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'm' }),
-          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'l' }),
-          Button({ value: 'primary', variant: 'outline', color: 'primary', borderRadius: 'full' }),
+          Button({
+            value: 'primary',
+            variant: 'outline',
+            color: 'primary',
+            borderRadius: 'none'
+          }),
+          Button({
+            value: 'primary',
+            variant: 'outline',
+            color: 'primary',
+            borderRadius: 's'
+          }),
+          Button({
+            value: 'primary',
+            variant: 'outline',
+            color: 'primary',
+            borderRadius: 'm'
+          }),
+          Button({
+            value: 'primary',
+            variant: 'outline',
+            color: 'primary',
+            borderRadius: 'l'
+          }),
+          Button({
+            value: 'primary',
+            variant: 'outline',
+            color: 'primary',
+            borderRadius: 'full'
+          }),
         ),
         x.div(
           Button({ value: 'neutral', variant: 'outline', color: 'neutral' }),
           Button({ value: 'primary', variant: 'outline', color: 'primary' }),
-          Button({ value: 'secondary', variant: 'outline', color: 'secondary' }),
+          Button({
+            value: 'secondary',
+            variant: 'outline',
+            color: 'secondary'
+          }),
           Button({ value: 'accent', variant: 'outline', color: 'accent' }),
           Button({ value: 'info', variant: 'outline', color: 'info' }),
           Button({ value: 'success', variant: 'outline', color: 'success' }),
@@ -253,31 +283,136 @@ export const UIPreview = function() {
         const selectedOption = options[1]
 
         x.div(
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'xl', }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'l', }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'm', }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 's', }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', size: 'xs', }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            size: 'xl',
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            size: 'l',
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            size: 'm',
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            size: 's',
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            size: 'xs',
+          }),
         ),
         x.div(
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'neutral' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'primary' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'secondary' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'accent' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'info' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'success' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'warning' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'outline', color: 'danger' }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'neutral'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'primary'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'secondary'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'accent'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'info'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'success'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'warning'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'outline',
+            color: 'danger'
+          }),
         ),
         x.div(
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'neutral' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'primary' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'secondary' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'accent' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'info' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'success' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'warning' }),
-          Select({ options: options, selectedOption: selectedOption, variant: 'solid', color: 'danger' }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'neutral'
+            }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'primary'
+            }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'secondary'
+            }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'accent'
+            }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'info'
+            }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'success'
+            }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'warning'
+            }),
+            Select({
+              options: options,
+              selectedOption: selectedOption,
+              variant: 'solid',
+              color: 'danger'
+            }),
         )
       }),
 
@@ -294,7 +429,11 @@ export const UIPreview = function() {
         x.div(
           TextInput({ variant: 'outline', color: 'neutral', value: 'neutral' }),
           TextInput({ variant: 'outline', color: 'primary', value: 'primary' }),
-          TextInput({ variant: 'outline', color: 'secondary', value: 'secondary' }),
+          TextInput({
+            variant: 'outline',
+            color: 'secondary',
+            value: 'secondary'
+          }),
           TextInput({ variant: 'outline', color: 'accent', value: 'accent' }),
           TextInput({ variant: 'outline', color: 'info', value: 'info' }),
           TextInput({ variant: 'outline', color: 'success', value: 'success' }),
@@ -304,7 +443,11 @@ export const UIPreview = function() {
         x.div(
           TextInput({ variant: 'solid', color: 'neutral', value: 'neutral' }),
           TextInput({ variant: 'solid', color: 'primary', value: 'primary' }),
-          TextInput({ variant: 'solid', color: 'secondary', value: 'secondary' }),
+          TextInput({
+            variant: 'solid',
+            color: 'secondary',
+            value: 'secondary'
+          }),
           TextInput({ variant: 'solid', color: 'accent', value: 'accent' }),
           TextInput({ variant: 'solid', color: 'info', value: 'info' }),
           TextInput({ variant: 'solid', color: 'success', value: 'success' }),
@@ -358,7 +501,11 @@ export const UIPreview = function() {
         x.div(
           TextArea({ value: 'neutral', variant: 'outline', color: 'neutral' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'primary' }),
-          TextArea({ value: 'neutral', variant: 'outline', color: 'secondary' }),
+          TextArea({
+            value: 'neutral',
+            variant: 'outline',
+            color: 'secondary'
+          }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'accent' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'info' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'success' }),
