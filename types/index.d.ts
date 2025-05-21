@@ -1,4 +1,4 @@
-import { IconName, IconVariant } from './icons'
+import { IconName } from './icons'
 
 export type Variant
   = 'plain'
@@ -23,8 +23,9 @@ export type Option = { label: string, value: string | number | boolean }
 
 export function Icon(
   props: {
-      name: IconName,
-      fill?: string, // Fill Color
+      name?: IconName,
+      url?: string,
+      color?: string,
       size?: string,
       style?: string
   }

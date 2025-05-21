@@ -38,3 +38,8 @@ export type IconName =
   | 'ui/plus-line-round-fill'
   | 'ui/plus-line-square-outline'
   | 'ui/plus-line-square-fill'
+  | 'ui/move'
+  | 'ui/move-outline'
+  | 'ui/reload'
+  | 'ui/search'
+  | 'ui/select-area'
