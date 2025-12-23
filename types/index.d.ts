@@ -35,6 +35,7 @@ export function Icon(
 
 export function Button(
   props: {
+    autoWidth?: boolean
     value?: string
     variant?: Variant
     color?: Color
@@ -60,6 +61,7 @@ export function Checkbox(
 
 export function NumberInput(
   props: {
+    autoWidth?: boolean
     min?: number,
     max?: number,
     step?: number,
@@ -87,6 +89,7 @@ export function Radio(
 
 export function Select(
   props: {
+    autoWidth?: boolean
     options: Option[]
     selectedOption?: Option | string | number | boolean
     variant?: Variant
@@ -127,6 +130,7 @@ export function Switch(
 export function TextArea(
   props: {
     autosize?: boolean,
+    autoWidth?: boolean
     disabled?: boolean,
     rows?: number,
     variant?: Variant
@@ -141,6 +145,7 @@ export function TextArea(
 
 export function TextInput(
   props: {
+    autoWidth?: boolean
     pattern?: string
     variant?: Variant
     color?: Color
