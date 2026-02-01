@@ -55,7 +55,7 @@ export function Checkbox(
     borderRadius?: BorderRadiusSize
     class?: string
     checked?: boolean
-    onChange?: (ev: Event) => void
+    onChange?: (ev: Event, checked: boolean) => void
   }
 ): import('paintor').Template
 
@@ -71,7 +71,7 @@ export function NumberInput(
     borderRadius?: BorderRadiusSize
     class?: string
     value?: number
-    onInput?: (ev: InputEvent | PointerEvent) => void
+    onInput?: (ev: InputEvent | PointerEvent, value: number) => void
     onInvalid?: (ev: Event) => void
   }
 ): import('paintor').Template
@@ -83,7 +83,7 @@ export function Radio(
     size?: Size
     class?: string
     checked?: boolean
-    onChange?: (ev: Event) => void
+    onChange?: (ev: Event, checked: boolean) => void
   }
 ): import('paintor').Template
 
@@ -97,7 +97,7 @@ export function Select(
     size?: Size
     borderRadius?: BorderRadiusSize
     class?: string
-    onChange?: (option: Option) => void
+    onChange?: (option: Option, value: string | number | boolean) => void
   }
 ): import('paintor').Template
 
@@ -111,7 +111,7 @@ export function Slider(
     size?: Size
     class?: string
     checked?: boolean
-    onChange?: (ev: Event) => void
+    onChange?: (ev: Event, value: number) => void
   }
 ): import('paintor').Template
 
@@ -123,7 +123,7 @@ export function Switch(
     borderRadius?: BorderRadiusSize
     class?: string
     checked?: boolean
-    onChange?: (ev: Event) => void
+    onChange?: (ev: Event, checked: boolean) => void
   }
 ): import('paintor').Template
 
@@ -139,7 +139,7 @@ export function TextArea(
     borderRadius?: BorderRadiusSize
     class?: string
     value?: string
-    onInput?: (ev: InputEvent) => void
+    onInput?: (ev: InputEvent, value: string) => void
   }
 ): import('paintor').Template
 
@@ -153,7 +153,7 @@ export function TextInput(
     borderRadius?: BorderRadiusSize
     class?: string
     value?: string
-    onInput?: (ev: InputEvent) => void
+    onInput?: (ev: InputEvent, value: string) => void
     onInvalid?: (ev: Event) => void
   }
 ): import('paintor').Template
