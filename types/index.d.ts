@@ -41,6 +41,7 @@ export function Button(
     color?: Color
     icon?: string
     size?: Size
+    title?: string
     value?: string
     variant?: Variant
     onClick?: (ev: PointerEvent) => void
@@ -54,6 +55,7 @@ export function Checkbox(
     class?: string
     color?: Color
     size?: Size
+    title?: string
     variant?: Variant
     onChange?: (ev: Event, checked: boolean) => void
   }
@@ -69,6 +71,7 @@ export function NumberInput(
     max?: number
     size?: Size
     step?: number
+    title?: string
     value?: number
     variant?: Variant
     onInput?: (ev: InputEvent | PointerEvent, value: number) => void
@@ -83,6 +86,7 @@ export function Radio(
     color?: Color
     name?: string
     size?: Size
+    title?: string
     variant?: Variant
     onChange?: (ev: Event, checked: boolean) => void
   }
@@ -97,6 +101,7 @@ export function Select(
     options: Option[]
     selectedOption?: Option | string | number | boolean
     size?: Size
+    title?: string
     variant?: Variant
     onChange?: (option: Option, value: string | number | boolean) => void
   }
@@ -111,6 +116,7 @@ export function Slider(
     max?: number
     size?: Size
     step?: number
+    title?: string
     value?: number
     variant?: Variant
     onChange?: (ev: Event, value: number) => void
@@ -124,6 +130,7 @@ export function Switch(
     class?: string
     color?: Color
     size?: Size
+    title?: string
     variant?: Variant
     onChange?: (ev: Event, checked: boolean) => void
   }
@@ -139,6 +146,7 @@ export function TextArea(
     disabled?: boolean
     rows?: number
     size?: Size
+    title?: string
     value?: string
     variant?: Variant
     onInput?: (ev: InputEvent, value: string) => void
@@ -153,6 +161,7 @@ export function TextInput(
     color?: Color
     pattern?: string
     size?: Size
+    title?: string
     value?: string
     variant?: Variant
     onInput?: (ev: InputEvent, value: string) => void
