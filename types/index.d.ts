@@ -144,6 +144,7 @@ export function TextArea(
     class?: string
     color?: Color
     disabled?: boolean
+    placeholder?: string
     rows?: number
     size?: Size
     title?: string
@@ -160,6 +161,7 @@ export function TextInput(
     class?: string
     color?: Color
     pattern?: string
+    placeholder?: string,
     size?: Size
     title?: string
     value?: string
