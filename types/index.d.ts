@@ -112,6 +112,7 @@ export function Slider(
     size?: Size
     class?: string
     checked?: boolean
+    value?: number
     onChange?: (ev: Event, value: number) => void
   }
 ): import('paintor').Template
