@@ -78,6 +78,7 @@ export function NumberInput(
 
 export function Radio(
   props: {
+    name?: string,
     variant?: Variant
     color?: Color
     size?: Size
