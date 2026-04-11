@@ -23,11 +23,11 @@ export type Option = { label: string, value: string | number | boolean }
 
 export function Icon(
   props: {
-      name?: IconName,
-      url?: string,
-      color?: string,
-      size?: string,
-      style?: string
+    color?: string
+    name?: IconName
+    size?: string
+    style?: string
+    url?: string
   }
 )
 
@@ -36,25 +36,25 @@ export function Icon(
 export function Button(
   props: {
     autoWidth?: boolean
-    value?: string
-    variant?: Variant
-    color?: Color
-    size?: Size
     borderRadius?: BorderRadiusSize
     class?: string
+    color?: Color
     icon?: string
+    size?: Size
+    value?: string
+    variant?: Variant
     onClick?: (ev: PointerEvent) => void
   }
 ): import('paintor').Template
 
 export function Checkbox(
   props: {
-    variant?: Variant
+    borderRadius?: BorderRadiusSize
+    checked?: boolean
+    class?: string
     color?: Color
     size?: Size
-    borderRadius?: BorderRadiusSize
-    class?: string
-    checked?: boolean
+    variant?: Variant
     onChange?: (ev: Event, checked: boolean) => void
   }
 ): import('paintor').Template
@@ -62,15 +62,15 @@ export function Checkbox(
 export function NumberInput(
   props: {
     autoWidth?: boolean
-    min?: number,
-    max?: number,
-    step?: number,
-    variant?: Variant
-    color?: Color
-    size?: Size
     borderRadius?: BorderRadiusSize
     class?: string
+    color?: Color
+    min?: number
+    max?: number
+    size?: Size
+    step?: number
     value?: number
+    variant?: Variant
     onInput?: (ev: InputEvent | PointerEvent, value: number) => void
     onInvalid?: (ev: Event) => void
   }
@@ -78,12 +78,12 @@ export function NumberInput(
 
 export function Radio(
   props: {
-    name?: string,
-    variant?: Variant
-    color?: Color
-    size?: Size
-    class?: string
     checked?: boolean
+    class?: string
+    color?: Color
+    name?: string
+    size?: Size
+    variant?: Variant
     onChange?: (ev: Event, checked: boolean) => void
   }
 ): import('paintor').Template
@@ -91,56 +91,56 @@ export function Radio(
 export function Select(
   props: {
     autoWidth?: boolean
-    options: Option[]
-    selectedOption?: Option | string | number | boolean
-    variant?: Variant
-    color?: Color
-    size?: Size
     borderRadius?: BorderRadiusSize
     class?: string
+    color?: Color
+    options: Option[]
+    selectedOption?: Option | string | number | boolean
+    size?: Size
+    variant?: Variant
     onChange?: (option: Option, value: string | number | boolean) => void
   }
 ): import('paintor').Template
 
 export function Slider(
   props: {
-    min?: number,
-    max?: number,
-    step?: number,
-    variant?: Variant
-    color?: Color
-    size?: Size
-    class?: string
     checked?: boolean
+    class?: string
+    color?: Color
+    min?: number
+    max?: number
+    size?: Size
+    step?: number
     value?: number
+    variant?: Variant
     onChange?: (ev: Event, value: number) => void
   }
 ): import('paintor').Template
 
 export function Switch(
   props: {
-    variant?: Variant
+    borderRadius?: BorderRadiusSize
+    checked?: boolean
+    class?: string
     color?: Color
     size?: Size
-    borderRadius?: BorderRadiusSize
-    class?: string
-    checked?: boolean
+    variant?: Variant
     onChange?: (ev: Event, checked: boolean) => void
   }
 ): import('paintor').Template
 
 export function TextArea(
   props: {
-    autosize?: boolean,
+    autosize?: boolean
     autoWidth?: boolean
-    disabled?: boolean,
-    rows?: number,
-    variant?: Variant
-    color?: Color
-    size?: Size
     borderRadius?: BorderRadiusSize
     class?: string
+    color?: Color
+    disabled?: boolean
+    rows?: number
+    size?: Size
     value?: string
+    variant?: Variant
     onInput?: (ev: InputEvent, value: string) => void
   }
 ): import('paintor').Template
@@ -148,13 +148,13 @@ export function TextArea(
 export function TextInput(
   props: {
     autoWidth?: boolean
-    pattern?: string
-    variant?: Variant
-    color?: Color
-    size?: Size
     borderRadius?: BorderRadiusSize
     class?: string
+    color?: Color
+    pattern?: string
+    size?: Size
     value?: string
+    variant?: Variant
     onInput?: (ev: InputEvent, value: string) => void
     onInvalid?: (ev: Event) => void
   }
