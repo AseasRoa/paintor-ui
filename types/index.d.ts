@@ -67,12 +67,12 @@ export function NumberInput(
     borderRadius?: BorderRadiusSize
     class?: string
     color?: Color
-    min?: number
-    max?: number
+    min?: number | null
+    max?: number | null
     size?: Size
-    step?: number
+    step?: number | null
     title?: string
-    value?: number
+    value?: number | null
     variant?: Variant
     onInput?: (ev: InputEvent | PointerEvent, value: number) => void
     onInvalid?: (ev: Event) => void
@@ -112,12 +112,12 @@ export function Slider(
     checked?: boolean
     class?: string
     color?: Color
-    min?: number
-    max?: number
+    min?: number | null
+    max?: number | null
     size?: Size
-    step?: number
+    step?: number | null
     title?: string
-    value?: number
+    value?: number | null
     variant?: Variant
     onChange?: (ev: Event, value: number) => void
   }
