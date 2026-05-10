@@ -63,6 +63,7 @@ export function Checkbox(
 
 export function NumberInput(
   props: {
+    allowTextInput?: boolean,
     autoWidth?: boolean
     borderRadius?: BorderRadiusSize
     class?: string
