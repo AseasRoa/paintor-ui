@@ -17,7 +17,11 @@ export type Color
   | 'success'
   | 'warning'
   | 'danger'
-export type Option = { label: string, value: string | number | boolean }
+export type Option = {
+  label: string,
+  value: string | number | boolean,
+  title?: string,
+}
 
 /* Icons */
 
