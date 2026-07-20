@@ -172,6 +172,7 @@ export function TextInput(
     value?: string
     variant?: Variant
     onInput?: (ev: InputEvent, value: string) => void
-    onInvalid?: (ev: Event) => void
+    onInvalid?: (ev: Event) => void,
+    onChange?: (value: string) => void,
   }
 ): import('paintor').Template
