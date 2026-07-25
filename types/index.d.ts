@@ -175,6 +175,6 @@ export function TextInput(
     onBeforeInput?: (ev: InputEvent, value: string) => void
     onInput?: (ev: InputEvent, value: string) => void
     onInvalid?: (ev: Event) => void,
-    onChange?: (value: string) => void,
+    onChange?: (ev: FocusEvent, value: string) => void,
   }
 ): import('paintor').Template
