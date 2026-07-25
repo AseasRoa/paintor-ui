@@ -155,6 +155,7 @@ export function TextArea(
     title?: string
     value?: string
     variant?: Variant
+    onBeforeInput?: (ev: InputEvent, value: string) => void
     onInput?: (ev: InputEvent, value: string) => void
   }
 ): import('paintor').Template
@@ -171,6 +172,7 @@ export function TextInput(
     title?: string
     value?: string
     variant?: Variant
+    onBeforeInput?: (ev: InputEvent, value: string) => void
     onInput?: (ev: InputEvent, value: string) => void
     onInvalid?: (ev: Event) => void,
     onChange?: (value: string) => void,
