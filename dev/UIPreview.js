@@ -2,7 +2,6 @@ import { css, template } from 'paintor'
 import {
   Button,
   Checkbox,
-  Icon,
   NumberInput,
   Radio,
   Select,
@@ -117,7 +116,7 @@ export const UIPreview = function() {
           Button({ value: 'solid m', variant: 'solid', size: 'm' }),
           Button({ value: 'solid s', variant: 'solid', size: 's' }),
           Button({ value: 'solid xs', variant: 'solid', size: 'xs' }),
-        ),
+        )
         x.div(
           Button({
             value: 'primary',
@@ -149,7 +148,7 @@ export const UIPreview = function() {
             color: 'primary',
             borderRadius: 'full'
           }),
-        ),
+        )
         x.div(
           Button({ value: 'neutral', variant: 'outline', color: 'neutral' }),
           Button({ value: 'primary', variant: 'outline', color: 'primary' }),
@@ -163,7 +162,7 @@ export const UIPreview = function() {
           Button({ value: 'success', variant: 'outline', color: 'success' }),
           Button({ value: 'warning', variant: 'outline', color: 'warning' }),
           Button({ value: 'danger', variant: 'outline', color: 'danger' }),
-        ),
+        )
         x.div(
           Button({ value: 'neutral', variant: 'solid', color: 'neutral' }),
           Button({ value: 'primary', variant: 'solid', color: 'primary' }),
@@ -185,7 +184,7 @@ export const UIPreview = function() {
           Checkbox({ variant: 'solid', size: 'm', checked: true }),
           Checkbox({ variant: 'solid', size: 's', checked: true }),
           Checkbox({ variant: 'solid', size: 'xs', checked: true }),
-        ),
+        )
         x.div(
           Checkbox({ variant: 'outline', color: 'neutral', checked: true }),
           Checkbox({ variant: 'outline', color: 'primary', checked: true }),
@@ -195,7 +194,7 @@ export const UIPreview = function() {
           Checkbox({ variant: 'outline', color: 'success', checked: true }),
           Checkbox({ variant: 'outline', color: 'warning', checked: true }),
           Checkbox({ variant: 'outline', color: 'danger', checked: true }),
-        ),
+        )
         x.div(
           Checkbox({ variant: 'solid', color: 'neutral', checked: true }),
           Checkbox({ variant: 'solid', color: 'primary', checked: true }),
@@ -217,7 +216,7 @@ export const UIPreview = function() {
           Radio({ variant: 'solid', size: 'm', checked: true }),
           Radio({ variant: 'solid', size: 's', checked: true }),
           Radio({ variant: 'solid', size: 'xs', checked: true }),
-        ),
+        )
         x.div(
           Radio({ variant: 'outline', color: 'neutral', checked: true }),
           Radio({ variant: 'outline', color: 'primary', checked: true }),
@@ -227,7 +226,7 @@ export const UIPreview = function() {
           Radio({ variant: 'outline', color: 'success', checked: true }),
           Radio({ variant: 'outline', color: 'warning', checked: true }),
           Radio({ variant: 'outline', color: 'danger', checked: true }),
-        ),
+        )
         x.div(
           Radio({ variant: 'solid', color: 'neutral', checked: true }),
           Radio({ variant: 'solid', color: 'primary', checked: true }),
@@ -249,7 +248,7 @@ export const UIPreview = function() {
           Switch({ variant: 'solid', size: 'm', checked: true }),
           Switch({ variant: 'solid', size: 's', checked: true }),
           Switch({ variant: 'solid', size: 'xs', checked: true }),
-        ),
+        )
         x.div(
           Switch({ variant: 'outline', color: 'neutral', checked: true }),
           Switch({ variant: 'outline', color: 'primary', checked: true }),
@@ -259,7 +258,7 @@ export const UIPreview = function() {
           Switch({ variant: 'outline', color: 'success', checked: true }),
           Switch({ variant: 'outline', color: 'warning', checked: true }),
           Switch({ variant: 'outline', color: 'danger', checked: true }),
-        ),
+        )
         x.div(
           Switch({ variant: 'solid', color: 'neutral', checked: true }),
           Switch({ variant: 'solid', color: 'primary', checked: true }),
@@ -313,7 +312,7 @@ export const UIPreview = function() {
             variant: 'solid',
             size: 'xs',
           }),
-        ),
+        )
         x.div(
           Select({
             options: options,
@@ -363,7 +362,7 @@ export const UIPreview = function() {
             variant: 'outline',
             color: 'danger'
           }),
-        ),
+        )
         x.div(
             Select({
               options: options,
@@ -425,7 +424,7 @@ export const UIPreview = function() {
           TextInput({ variant: 'solid', size: 'm', value: 'solid m' }),
           TextInput({ variant: 'solid', size: 's', value: 'solid s' }),
           TextInput({ variant: 'solid', size: 'xs', value: 'solid xs' }),
-        ),
+        )
         x.div(
           TextInput({ variant: 'outline', color: 'neutral', value: 'neutral' }),
           TextInput({ variant: 'outline', color: 'primary', value: 'primary' }),
@@ -439,7 +438,7 @@ export const UIPreview = function() {
           TextInput({ variant: 'outline', color: 'success', value: 'success' }),
           TextInput({ variant: 'outline', color: 'warning', value: 'warning' }),
           TextInput({ variant: 'outline', color: 'danger', value: 'danger' }),
-        ),
+        )
         x.div(
           TextInput({ variant: 'solid', color: 'neutral', value: 'neutral' }),
           TextInput({ variant: 'solid', color: 'primary', value: 'primary' }),
@@ -465,7 +464,7 @@ export const UIPreview = function() {
           NumberInput({ variant: 'solid', size: 'm', value: 0 }),
           NumberInput({ variant: 'solid', size: 's', value: 0 }),
           NumberInput({ variant: 'solid', size: 'xs', value: 0 }),
-        ),
+        )
         x.div(
           NumberInput({ variant: 'outline', color: 'neutral', value: 0 }),
           NumberInput({ variant: 'outline', color: 'primary', value: 0 }),
@@ -475,7 +474,7 @@ export const UIPreview = function() {
           NumberInput({ variant: 'outline', color: 'success', value: 0 }),
           NumberInput({ variant: 'outline', color: 'warning', value: 0 }),
           NumberInput({ variant: 'outline', color: 'danger', value: 0 }),
-        ),
+        )
         x.div(
           NumberInput({ variant: 'solid', color: 'neutral', value: 0 }),
           NumberInput({ variant: 'solid', color: 'primary', value: 0 }),
@@ -497,7 +496,7 @@ export const UIPreview = function() {
           TextArea({ value: 'solid m', variant: 'solid', size: 'm' }),
           TextArea({ value: 'solid s', variant: 'solid', size: 's' }),
           TextArea({ value: 'solid xs', variant: 'solid', size: 'xs' }),
-        ),
+        )
         x.div(
           TextArea({ value: 'neutral', variant: 'outline', color: 'neutral' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'primary' }),
@@ -511,7 +510,7 @@ export const UIPreview = function() {
           TextArea({ value: 'neutral', variant: 'outline', color: 'success' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'warning' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'danger' }),
-        ),
+        )
         x.div(
           TextArea({ value: 'neutral', variant: 'solid', color: 'neutral' }),
           TextArea({ value: 'neutral', variant: 'solid', color: 'primary' }),
@@ -533,7 +532,7 @@ export const UIPreview = function() {
           Slider({ variant: 'solid', size: 'm' }),
           Slider({ variant: 'solid', size: 's' }),
           Slider({ variant: 'solid', size: 'xs' }),
-        ),
+        )
         x.div(
           Slider({ variant: 'outline', color: 'neutral' }),
           Slider({ variant: 'outline', color: 'primary' }),
@@ -543,7 +542,7 @@ export const UIPreview = function() {
           Slider({ variant: 'outline', color: 'success' }),
           Slider({ variant: 'outline', color: 'warning' }),
           Slider({ variant: 'outline', color: 'danger' }),
-        ),
+        )
         x.div(
           Slider({ variant: 'solid', color: 'neutral' }),
           Slider({ variant: 'solid', color: 'primary' }),
