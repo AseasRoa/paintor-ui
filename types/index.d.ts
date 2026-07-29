@@ -43,6 +43,7 @@ export function Button(
     borderRadius?: BorderRadiusSize
     class?: string
     color?: Color
+    disabled?: boolean
     icon?: string
     size?: Size
     title?: string
@@ -58,6 +59,7 @@ export function Checkbox(
     checked?: boolean
     class?: string
     color?: Color
+    disabled?: boolean
     size?: Size
     title?: string
     variant?: Variant
@@ -72,6 +74,7 @@ export function NumberInput(
     borderRadius?: BorderRadiusSize
     class?: string
     color?: Color
+    disabled?: boolean
     min?: number | null
     max?: number | null
     size?: Size
@@ -89,6 +92,7 @@ export function Radio(
     checked?: boolean
     class?: string
     color?: Color
+    disabled?: boolean
     name?: string
     size?: Size
     title?: string
@@ -103,6 +107,7 @@ export function Select(
     borderRadius?: BorderRadiusSize
     class?: string
     color?: Color
+    disabled?: true
     options: Option[]
     selectedOption?: Option | string | number | boolean
     size?: Size
@@ -117,6 +122,7 @@ export function Slider(
     checked?: boolean
     class?: string
     color?: Color
+    disabled?: boolean
     min?: number | null
     max?: number | null
     size?: Size
@@ -134,6 +140,7 @@ export function Switch(
     checked?: boolean
     class?: string
     color?: Color
+    disabled?: boolean
     size?: Size
     title?: string
     variant?: Variant
@@ -166,6 +173,7 @@ export function TextInput(
     borderRadius?: BorderRadiusSize
     class?: string
     color?: Color
+    disabled?: boolean
     pattern?: string
     placeholder?: string,
     size?: Size
