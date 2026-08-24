@@ -113,7 +113,11 @@ export function Select(
     size?: Size
     title?: string
     variant?: Variant
-    onChange?: (option: Option, value: string | number | boolean) => void
+    onChange?: (
+      ev: Event,
+      option: Option,
+      value: string | number | boolean
+    ) => void
   }
 ): import('paintor').Template
 
