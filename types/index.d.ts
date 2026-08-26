@@ -27,6 +27,7 @@ export type Option = {
 
 export function Icon(
   props: {
+    class?: string
     color?: string
     name?: IconName
     size?: string
