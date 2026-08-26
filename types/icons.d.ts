@@ -43,3 +43,6 @@ export type IconName =
   | 'ui/reload'
   | 'ui/search'
   | 'ui/select-area'
+  | 'ui/delete'
+  | 'ui/checkbox-cancel'
+  | 'ui/checkbox-confirm'
