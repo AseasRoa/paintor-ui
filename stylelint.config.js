@@ -220,6 +220,6 @@ export default {
     /**
      * Whitespace inside
      */
-    'comment-whitespace-inside': 'always',
+    'comment-whitespace-inside': 'always'
   }
 }

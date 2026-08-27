@@ -8,7 +8,7 @@ import {
   Slider,
   Switch,
   TextArea,
-  TextInput,
+  TextInput
 } from '#paintor-ui'
 
 export const UIPreview = function() {
@@ -115,7 +115,7 @@ export const UIPreview = function() {
           Button({ value: 'solid l', variant: 'solid', size: 'l' }),
           Button({ value: 'solid m', variant: 'solid', size: 'm' }),
           Button({ value: 'solid s', variant: 'solid', size: 's' }),
-          Button({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+          Button({ value: 'solid xs', variant: 'solid', size: 'xs' })
         )
         x.div(
           Button({
@@ -147,7 +147,7 @@ export const UIPreview = function() {
             variant: 'outline',
             color: 'primary',
             borderRadius: 'full'
-          }),
+          })
         )
         x.div(
           Button({ value: 'neutral', variant: 'outline', color: 'neutral' }),
@@ -161,7 +161,7 @@ export const UIPreview = function() {
           Button({ value: 'info', variant: 'outline', color: 'info' }),
           Button({ value: 'success', variant: 'outline', color: 'success' }),
           Button({ value: 'warning', variant: 'outline', color: 'warning' }),
-          Button({ value: 'danger', variant: 'outline', color: 'danger' }),
+          Button({ value: 'danger', variant: 'outline', color: 'danger' })
         )
         x.div(
           Button({ value: 'neutral', variant: 'solid', color: 'neutral' }),
@@ -171,7 +171,7 @@ export const UIPreview = function() {
           Button({ value: 'info', variant: 'solid', color: 'info' }),
           Button({ value: 'success', variant: 'solid', color: 'success' }),
           Button({ value: 'warning', variant: 'solid', color: 'warning' }),
-          Button({ value: 'danger', variant: 'solid', color: 'danger' }),
+          Button({ value: 'danger', variant: 'solid', color: 'danger' })
         )
       }),
 
@@ -183,7 +183,7 @@ export const UIPreview = function() {
           Checkbox({ variant: 'solid', size: 'l', checked: true }),
           Checkbox({ variant: 'solid', size: 'm', checked: true }),
           Checkbox({ variant: 'solid', size: 's', checked: true }),
-          Checkbox({ variant: 'solid', size: 'xs', checked: true }),
+          Checkbox({ variant: 'solid', size: 'xs', checked: true })
         )
         x.div(
           Checkbox({ variant: 'outline', color: 'neutral', checked: true }),
@@ -193,7 +193,7 @@ export const UIPreview = function() {
           Checkbox({ variant: 'outline', color: 'info', checked: true }),
           Checkbox({ variant: 'outline', color: 'success', checked: true }),
           Checkbox({ variant: 'outline', color: 'warning', checked: true }),
-          Checkbox({ variant: 'outline', color: 'danger', checked: true }),
+          Checkbox({ variant: 'outline', color: 'danger', checked: true })
         )
         x.div(
           Checkbox({ variant: 'solid', color: 'neutral', checked: true }),
@@ -203,7 +203,7 @@ export const UIPreview = function() {
           Checkbox({ variant: 'solid', color: 'info', checked: true }),
           Checkbox({ variant: 'solid', color: 'success', checked: true }),
           Checkbox({ variant: 'solid', color: 'warning', checked: true }),
-          Checkbox({ variant: 'solid', color: 'danger', checked: true }),
+          Checkbox({ variant: 'solid', color: 'danger', checked: true })
         )
       }),
 
@@ -215,7 +215,7 @@ export const UIPreview = function() {
           Radio({ variant: 'solid', size: 'l', checked: true }),
           Radio({ variant: 'solid', size: 'm', checked: true }),
           Radio({ variant: 'solid', size: 's', checked: true }),
-          Radio({ variant: 'solid', size: 'xs', checked: true }),
+          Radio({ variant: 'solid', size: 'xs', checked: true })
         )
         x.div(
           Radio({ variant: 'outline', color: 'neutral', checked: true }),
@@ -225,7 +225,7 @@ export const UIPreview = function() {
           Radio({ variant: 'outline', color: 'info', checked: true }),
           Radio({ variant: 'outline', color: 'success', checked: true }),
           Radio({ variant: 'outline', color: 'warning', checked: true }),
-          Radio({ variant: 'outline', color: 'danger', checked: true }),
+          Radio({ variant: 'outline', color: 'danger', checked: true })
         )
         x.div(
           Radio({ variant: 'solid', color: 'neutral', checked: true }),
@@ -235,7 +235,7 @@ export const UIPreview = function() {
           Radio({ variant: 'solid', color: 'info', checked: true }),
           Radio({ variant: 'solid', color: 'success', checked: true }),
           Radio({ variant: 'solid', color: 'warning', checked: true }),
-          Radio({ variant: 'solid', color: 'danger', checked: true }),
+          Radio({ variant: 'solid', color: 'danger', checked: true })
         )
       }),
 
@@ -247,7 +247,7 @@ export const UIPreview = function() {
           Switch({ variant: 'solid', size: 'l', checked: true }),
           Switch({ variant: 'solid', size: 'm', checked: true }),
           Switch({ variant: 'solid', size: 's', checked: true }),
-          Switch({ variant: 'solid', size: 'xs', checked: true }),
+          Switch({ variant: 'solid', size: 'xs', checked: true })
         )
         x.div(
           Switch({ variant: 'outline', color: 'neutral', checked: true }),
@@ -257,7 +257,7 @@ export const UIPreview = function() {
           Switch({ variant: 'outline', color: 'info', checked: true }),
           Switch({ variant: 'outline', color: 'success', checked: true }),
           Switch({ variant: 'outline', color: 'warning', checked: true }),
-          Switch({ variant: 'outline', color: 'danger', checked: true }),
+          Switch({ variant: 'outline', color: 'danger', checked: true })
         )
         x.div(
           Switch({ variant: 'solid', color: 'neutral', checked: true }),
@@ -267,7 +267,7 @@ export const UIPreview = function() {
           Switch({ variant: 'solid', color: 'info', checked: true }),
           Switch({ variant: 'solid', color: 'success', checked: true }),
           Switch({ variant: 'solid', color: 'warning', checked: true }),
-          Switch({ variant: 'solid', color: 'danger', checked: true }),
+          Switch({ variant: 'solid', color: 'danger', checked: true })
         )
       }),
 
@@ -277,7 +277,7 @@ export const UIPreview = function() {
         const options = [
           { value: 'a', label: 'Label A' },
           { value: 'b', label: 'Label B' },
-          { value: 'c', label: 'This is Label C and it is a bit longer' },
+          { value: 'c', label: 'This is Label C and it is a bit longer' }
         ]
         const selectedOption = options[1]
 
@@ -286,32 +286,32 @@ export const UIPreview = function() {
             options: options,
             selectedOption: selectedOption,
             variant: 'solid',
-            size: 'xl',
+            size: 'xl'
           }),
           Select({
             options: options,
             selectedOption: selectedOption,
             variant: 'solid',
-            size: 'l',
+            size: 'l'
           }),
           Select({
             options: options,
             selectedOption: selectedOption,
             variant: 'solid',
-            size: 'm',
+            size: 'm'
           }),
           Select({
             options: options,
             selectedOption: selectedOption,
             variant: 'solid',
-            size: 's',
+            size: 's'
           }),
           Select({
             options: options,
             selectedOption: selectedOption,
             variant: 'solid',
-            size: 'xs',
-          }),
+            size: 'xs'
+          })
         )
         x.div(
           Select({
@@ -361,57 +361,57 @@ export const UIPreview = function() {
             selectedOption: selectedOption,
             variant: 'outline',
             color: 'danger'
-          }),
+          })
         )
         x.div(
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'neutral'
-            }),
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'primary'
-            }),
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'secondary'
-            }),
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'accent'
-            }),
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'info'
-            }),
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'success'
-            }),
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'warning'
-            }),
-            Select({
-              options: options,
-              selectedOption: selectedOption,
-              variant: 'solid',
-              color: 'danger'
-            }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'neutral'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'primary'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'secondary'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'accent'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'info'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'success'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'warning'
+          }),
+          Select({
+            options: options,
+            selectedOption: selectedOption,
+            variant: 'solid',
+            color: 'danger'
+          })
         )
       }),
 
@@ -423,7 +423,7 @@ export const UIPreview = function() {
           TextInput({ variant: 'solid', size: 'l', value: 'solid l' }),
           TextInput({ variant: 'solid', size: 'm', value: 'solid m' }),
           TextInput({ variant: 'solid', size: 's', value: 'solid s' }),
-          TextInput({ variant: 'solid', size: 'xs', value: 'solid xs' }),
+          TextInput({ variant: 'solid', size: 'xs', value: 'solid xs' })
         )
         x.div(
           TextInput({ variant: 'outline', color: 'neutral', value: 'neutral' }),
@@ -437,7 +437,7 @@ export const UIPreview = function() {
           TextInput({ variant: 'outline', color: 'info', value: 'info' }),
           TextInput({ variant: 'outline', color: 'success', value: 'success' }),
           TextInput({ variant: 'outline', color: 'warning', value: 'warning' }),
-          TextInput({ variant: 'outline', color: 'danger', value: 'danger' }),
+          TextInput({ variant: 'outline', color: 'danger', value: 'danger' })
         )
         x.div(
           TextInput({ variant: 'solid', color: 'neutral', value: 'neutral' }),
@@ -451,7 +451,7 @@ export const UIPreview = function() {
           TextInput({ variant: 'solid', color: 'info', value: 'info' }),
           TextInput({ variant: 'solid', color: 'success', value: 'success' }),
           TextInput({ variant: 'solid', color: 'warning', value: 'warning' }),
-          TextInput({ variant: 'solid', color: 'danger', value: 'danger' }),
+          TextInput({ variant: 'solid', color: 'danger', value: 'danger' })
         )
       }),
 
@@ -463,7 +463,7 @@ export const UIPreview = function() {
           NumberInput({ variant: 'solid', size: 'l', value: 0 }),
           NumberInput({ variant: 'solid', size: 'm', value: 0 }),
           NumberInput({ variant: 'solid', size: 's', value: 0 }),
-          NumberInput({ variant: 'solid', size: 'xs', value: 0 }),
+          NumberInput({ variant: 'solid', size: 'xs', value: 0 })
         )
         x.div(
           NumberInput({ variant: 'outline', color: 'neutral', value: 0 }),
@@ -473,7 +473,7 @@ export const UIPreview = function() {
           NumberInput({ variant: 'outline', color: 'info', value: 0 }),
           NumberInput({ variant: 'outline', color: 'success', value: 0 }),
           NumberInput({ variant: 'outline', color: 'warning', value: 0 }),
-          NumberInput({ variant: 'outline', color: 'danger', value: 0 }),
+          NumberInput({ variant: 'outline', color: 'danger', value: 0 })
         )
         x.div(
           NumberInput({ variant: 'solid', color: 'neutral', value: 0 }),
@@ -483,7 +483,7 @@ export const UIPreview = function() {
           NumberInput({ variant: 'solid', color: 'info', value: 0 }),
           NumberInput({ variant: 'solid', color: 'success', value: 0 }),
           NumberInput({ variant: 'solid', color: 'warning', value: 0 }),
-          NumberInput({ variant: 'solid', color: 'danger', value: 0 }),
+          NumberInput({ variant: 'solid', color: 'danger', value: 0 })
         )
       }),
 
@@ -495,7 +495,7 @@ export const UIPreview = function() {
           TextArea({ value: 'solid l', variant: 'solid', size: 'l' }),
           TextArea({ value: 'solid m', variant: 'solid', size: 'm' }),
           TextArea({ value: 'solid s', variant: 'solid', size: 's' }),
-          TextArea({ value: 'solid xs', variant: 'solid', size: 'xs' }),
+          TextArea({ value: 'solid xs', variant: 'solid', size: 'xs' })
         )
         x.div(
           TextArea({ value: 'neutral', variant: 'outline', color: 'neutral' }),
@@ -509,7 +509,7 @@ export const UIPreview = function() {
           TextArea({ value: 'neutral', variant: 'outline', color: 'info' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'success' }),
           TextArea({ value: 'neutral', variant: 'outline', color: 'warning' }),
-          TextArea({ value: 'neutral', variant: 'outline', color: 'danger' }),
+          TextArea({ value: 'neutral', variant: 'outline', color: 'danger' })
         )
         x.div(
           TextArea({ value: 'neutral', variant: 'solid', color: 'neutral' }),
@@ -519,7 +519,7 @@ export const UIPreview = function() {
           TextArea({ value: 'neutral', variant: 'solid', color: 'info' }),
           TextArea({ value: 'neutral', variant: 'solid', color: 'success' }),
           TextArea({ value: 'neutral', variant: 'solid', color: 'warning' }),
-          TextArea({ value: 'neutral', variant: 'solid', color: 'danger' }),
+          TextArea({ value: 'neutral', variant: 'solid', color: 'danger' })
         )
       }),
 
@@ -531,7 +531,7 @@ export const UIPreview = function() {
           Slider({ variant: 'solid', size: 'l' }),
           Slider({ variant: 'solid', size: 'm' }),
           Slider({ variant: 'solid', size: 's' }),
-          Slider({ variant: 'solid', size: 'xs' }),
+          Slider({ variant: 'solid', size: 'xs' })
         )
         x.div(
           Slider({ variant: 'outline', color: 'neutral' }),
@@ -541,7 +541,7 @@ export const UIPreview = function() {
           Slider({ variant: 'outline', color: 'info' }),
           Slider({ variant: 'outline', color: 'success' }),
           Slider({ variant: 'outline', color: 'warning' }),
-          Slider({ variant: 'outline', color: 'danger' }),
+          Slider({ variant: 'outline', color: 'danger' })
         )
         x.div(
           Slider({ variant: 'solid', color: 'neutral' }),
@@ -551,9 +551,8 @@ export const UIPreview = function() {
           Slider({ variant: 'solid', color: 'info' }),
           Slider({ variant: 'solid', color: 'success' }),
           Slider({ variant: 'solid', color: 'warning' }),
-          Slider({ variant: 'solid', color: 'danger' }),
+          Slider({ variant: 'solid', color: 'danger' })
         )
-      }),
-    )
+      }))
   })
 }
