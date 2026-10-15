@@ -102,7 +102,7 @@ export function NumberInput(
     title?: string
     value?: number | null
     variant?: Variant
-    onInput?: (ev: InputEvent | PointerEvent, value: number) => void
+    onInput?: (ev: InputEvent | PointerEvent, value: number | string) => void
     onInvalid?: (ev: Event) => void
   }
 ): import('paintor').Template
