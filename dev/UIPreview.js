@@ -2,6 +2,7 @@ import { css, template } from 'paintor'
 import {
   Button,
   Checkbox,
+  DatePicker,
   NumberInput,
   Radio,
   Select,
@@ -452,6 +453,38 @@ export const UIPreview = function() {
           TextInput({ variant: 'solid', color: 'success', value: 'success' }),
           TextInput({ variant: 'solid', color: 'warning', value: 'warning' }),
           TextInput({ variant: 'solid', color: 'danger', value: 'danger' })
+        )
+      }),
+
+      x.hr(),
+
+      x.$if(true, () => {
+        x.div(
+          DatePicker({ variant: 'solid', size: 'xl' }),
+          DatePicker({ variant: 'solid', size: 'l' }),
+          DatePicker({ variant: 'solid', size: 'm' }),
+          DatePicker({ variant: 'solid', size: 's' }),
+          DatePicker({ variant: 'solid', size: 'xs' })
+        )
+        x.div(
+          DatePicker({ variant: 'outline', color: 'neutral' }),
+          DatePicker({ variant: 'outline', color: 'primary' }),
+          DatePicker({ variant: 'outline', color: 'secondary' }),
+          DatePicker({ variant: 'outline', color: 'accent' }),
+          DatePicker({ variant: 'outline', color: 'info' }),
+          DatePicker({ variant: 'outline', color: 'success' }),
+          DatePicker({ variant: 'outline', color: 'warning' }),
+          DatePicker({ variant: 'outline', color: 'danger' })
+        )
+        x.div(
+          DatePicker({ variant: 'solid', color: 'neutral' }),
+          DatePicker({ variant: 'solid', color: 'primary' }),
+          DatePicker({ variant: 'solid', color: 'secondary' }),
+          DatePicker({ variant: 'solid', color: 'accent' }),
+          DatePicker({ variant: 'solid', color: 'info' }),
+          DatePicker({ variant: 'solid', color: 'success' }),
+          DatePicker({ variant: 'solid', color: 'warning' }),
+          DatePicker({ variant: 'solid', color: 'danger' })
         )
       }),
 

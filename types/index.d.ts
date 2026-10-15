@@ -68,6 +68,25 @@ export function Checkbox(
   }
 ): import('paintor').Template
 
+export function DatePicker(
+  props: {
+      borderRadius?: BorderRadiusSize
+      class?: string
+      color?: Color
+      disabled?: boolean
+      min?: number | string | Date | null
+      max?: number | string | Date | null
+      size?: Size
+      title?: string
+      value?: number | string | Date | null
+      variant?: Variant
+      onChange?: (
+        ev: Event,
+        value: { asDate: Date, asNumber: number, asString: string } | null
+      ) => void
+  }
+): import('paintor').Template
+
 export function NumberInput(
   props: {
     allowTextInput?: boolean,
