@@ -45,7 +45,7 @@ export function Button(
     class?: string
     color?: Color
     disabled?: boolean
-    icon?: string
+    icon?: Icon,
     size?: Size
     title?: string
     value?: string
